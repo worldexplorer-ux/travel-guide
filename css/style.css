@@ -1,0 +1,462 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  padding-top: 56px;
+}
+
+main [id] {
+  scroll-margin-top: 100px; /* height of your fixed navbar */
+}
+
+h1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Prevent AOS from causing horizontal overflow in navbar */
+.navbar [data-aos] {
+  overflow: hidden;
+  transform: translateZ(0); /* Keeps animations smooth without shifting layout */
+}
+
+#nav-bg {
+    background-color: #102f4b;
+}
+
+#homepage { 
+  position: relative;
+  background-image: url(../images/index.jpg);
+  width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#homepage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+#homepage .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  #homepage { height: 35vh; }
+}
+@media all and (min-width: 992px) {
+  #homepage { height: 50vh; }
+}
+@media all and (min-width: 1200px) {
+  #homepage { height: 60vh; }
+}
+
+/* Horizontal scroll for mobile */
+.destination-scroll {
+  overflow-x: auto;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem 1rem;   /* spacing inside scroll */
+  scroll-snap-type: x mandatory;
+}
+
+.card-container {
+  flex: 0 0 auto;         /* don’t shrink */
+  width: 80%;             /* full width on mobile */
+  max-width: 300px;       /* reasonable cap for desktop */
+  scroll-snap-align: start;
+}
+@media all and (min-width: 992px) {
+  /* Hide scrollbar (optional) */
+.destination-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+}
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.scroll-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.scroll-btn.left {
+  left: -10px;  /* tweak spacing */
+}
+
+.scroll-btn.right {
+  right: -10px;
+}
+
+
+#rome {
+   position: relative;
+    background-image: url(../images/rome.jpg.jpg);
+   width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#rome::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+
+#rome .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  #rome { height: 35vh; }
+}
+@media all and (min-width: 992px) {
+  #rome { height: 50vh; }
+}
+@media all and (min-width: 1200px) {
+  #rome { height: 60vh; }
+}
+
+#barcelona {
+   position: relative;
+    background-image: url(../images/barcelona2.jpg);
+   width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#barcelona::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+
+#barcelona .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  #barcelona { height: 35vh; }
+}
+@media all and (min-width: 992px) {
+  #barcelona { height: 50vh; }
+}
+@media all and (min-width: 1200px) {
+  #barcelona { height: 60vh; }
+}
+
+#london {
+   position: relative;
+    background-image: url(../images/london.jpg);
+   width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#london::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+
+#london .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  #london { height: 35vh; }
+}
+@media all and (min-width: 992px) {
+  #london { height: 50vh; }
+}
+@media all and (min-width: 1200px) {
+  #london { height: 60vh; }
+}
+
+#tokyo {
+   position: relative;
+    background-image: url(../images/tokyo.jpg);
+   width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#tokyo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+
+#tokyo .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  #tokyo { height: 35vh; }
+}
+@media all and (min-width: 992px) {
+  #tokyo { height: 50vh; }
+}
+@media all and (min-width: 1200px) {
+  #tokyo { height: 60vh; }
+}
+
+#paris {
+   position: relative;
+    background-image: url(../images/paris.jpg);
+   width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#paris::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+
+#paris .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  #paris { height: 35vh; }
+}
+@media all and (min-width: 992px) {
+  #paris { height: 50vh; }
+}
+@media all and (min-width: 1200px) {
+  #paris { height: 60vh; }
+}
+
+#dubai {
+   position: relative;
+    background-image: url(../images/dubai.jpg);
+   width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#dubai::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+
+#dubai .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  #dubai { height: 35vh; }
+}
+@media all and (min-width: 992px) {
+  #dubai { height: 50vh; }
+}
+@media all and (min-width: 1200px) {
+  #dubai { height: 60vh; }
+}
+
+#new-york {
+   position: relative;
+    background-image: url(../images/new-york.jpg);
+   width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#new-york::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+
+#new-york .row {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  #new-york { height: 35vh; }
+}
+@media all and (min-width: 992px) {
+  #new-york { height: 50vh; }
+}
+@media all and (min-width: 1200px) {
+  #new-york { height: 60vh; }
+}
+/* Sticky container */
+#sm .d-block.d-lg-none {
+  z-index: 1030;
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  padding: 0.5rem;
+}
+
+/* Dropdown button styling */
+#sm .dropdown-toggle {
+  width: 100%;
+  background-color: #102f4b;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Dropdown menu styling */
+#sm .dropdown-menu {
+  width: 100%; /* Full width for touch */
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+/* Dropdown items */
+#sm .dropdown-item {
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+#sm  .dropdown-item:active {
+  background-color: #102f4b;
+  color: #f0f4f8;
+}
+
+#sm .dropdown-item:focus {
+  background-color: #f0f4f8;
+  color: #000;
+}
+
+/* Better spacing for touch devices */
+@media (max-width: 768px) {
+#sm .dropdown-item {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+.sidebar-link.active {
+  background-color: #102f4b;
+  color: white;
+}
+.sidebar-link {
+  color: #0f0f0f;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar-link:hover {
+  background-color: #e9ecef;
+  color: #102f4b
+}
+.sticky-sidebar {
+   position: sticky;
+   top: 1rem;
+}
+}
+@media screen and (min-width: 992px) {
+  .sticky-sidebar {
+    top: 5rem
+  }
+}
+
+.btn-hover:hover {
+      background-color: #4b4f56;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+
+ #footer {
+  background: #102f4b;
+}
+
+#footer a:hover {
+  color: #ffc107; /* Golden highlight */
+  text-decoration: underline;
+}
+
+#footer .bi {
+  transition: transform 0.3s ease;
+}
+
+#footer .bi:hover {
+  transform: scale(1.2);
+}
+
+    
